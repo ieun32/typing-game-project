@@ -1,0 +1,125 @@
+:root {
+  --main-color: #4D77FF;
+  --hover-color: #4D6DE3;
+  --font-inactive: lightgray;
+  --font-active: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  display: inline;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul > li {
+  display: inline;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home > ul > li > h2#label {
+  font-weight: 700;
+}
+
+.home > ul > li > h2#speed {
+  color: var(--main-color)
+}
+
+.home > ul > li > h2#accurancy {
+  color: var(--main-color)
+}
+
+.home > button.startButton {
+  background: var(--main-color);
+  width: 20rem;
+  height: 3.5rem;
+  border-radius: 0.3rem;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  border-width: 0rem;
+  cursor: pointer;
+}
+
+.home > button.startButton:hover {
+  background-color: var(--hover-color);
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.game > div.word-counter {
+  font-size: 2rem;
+}
+
+.game > div.word-counter > span.current {
+  color: var(--main-color)
+}
+
+.game > div.word-viewer {
+  font-size: 3rem;
+}
+
+.game > div.word-viewer > ul > li.active {
+  color: var(--font-active)
+}
+
+.game > div.word-viewer > ul > li.inactive {
+  color: var(--font-inactive)
+}
+
+.game > ul.word-info > li > span.speed {
+  color: var(--main-color)
+}
+
+.game > ul.word-info > li > span.accurancy {
+  color: var(--main-color)
+}
+
+.game > ul {
+  font-size: 2rem;
+}
+
+.game > input {
+  width: 18rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: baseline;
+  padding: 0px 10px 0px 10px;
+  font-size: 1.2rem;
+}
+
